@@ -6,7 +6,7 @@
 
 A pipe-friendly stream filter that renders LaTeX as Unicode art or inline images.
 
-[![CI](https://github.com/nicokeywords/termula/actions/workflows/ci.yml/badge.svg)](https://github.com/nicokeywords/termula/actions/workflows/ci.yml)
+[![CI](https://github.com/j-ito0625/termula/actions/workflows/ci.yml/badge.svg)](https://github.com/j-ito0625/termula/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/termula.svg)](https://crates.io/crates/termula)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/Rust-2021-DEA584?logo=rust&logoColor=white)](https://www.rust-lang.org/)

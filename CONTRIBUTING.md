@@ -5,7 +5,7 @@ Thanks for your interest in contributing to termula!
 ## Development Setup
 
 ```bash
-git clone https://github.com/nicokeywords/termula.git
+git clone https://github.com/j-ito0625/termula.git
 cd termula
 cargo build
 ```

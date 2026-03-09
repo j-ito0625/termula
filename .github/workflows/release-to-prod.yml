@@ -26,7 +26,7 @@ jobs:
       - name: Push release branch to production repo
         run: |
           tag="${GITHUB_REF#refs/tags/}"
-          git remote add prod https://x-access-token:${{ secrets.PROD_REPO_TOKEN }}@github.com/nicokeywords/termula.git
+          git remote add prod https://x-access-token:${{ secrets.PROD_REPO_TOKEN }}@github.com/j-ito0625/termula.git
           git push prod HEAD:refs/heads/release/${tag} --force
 
       - name: Create PR on production repo
@@ -35,7 +35,7 @@ jobs:
         run: |
           tag="${GITHUB_REF#refs/tags/}"
           gh pr create \
-            --repo nicokeywords/termula \
+            --repo j-ito0625/termula \
             --head "release/${tag}" \
             --base main \
             --title "Release ${tag}" \

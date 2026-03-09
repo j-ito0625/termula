@@ -1,11 +1,11 @@
 class Termula < Formula
   desc "Render LaTeX math beautifully in your terminal"
-  homepage "https://github.com/nicokeywords/termula"
+  homepage "https://github.com/j-ito0625/termula"
   license "MIT"
 
   # Update these for each release
   version "0.1.0"
-  url "https://github.com/nicokeywords/termula/archive/refs/tags/v#{version}.tar.gz"
+  url "https://github.com/j-ito0625/termula/archive/refs/tags/v#{version}.tar.gz"
   # sha256 "UPDATE_WITH_ACTUAL_SHA256"
 
   depends_on "rust" => :build
