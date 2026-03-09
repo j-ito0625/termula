@@ -18,7 +18,7 @@ A pipe-friendly stream filter that renders LaTeX as Unicode art or inline images
 ---
 
 <p align="center">
-  <img src="assets/demo.gif" alt="termula demo — rendering LaTeX math in the terminal" width="640">
+  <img src="assets/demo-image.gif" alt="termula demo — rendering LaTeX math as images in the terminal" width="640">
 </p>
 
 > termula detects LaTeX math in any text stream and renders it — as Unicode art in any terminal, or as crisp images in Kitty/WezTerm/iTerm2.
@@ -57,7 +57,7 @@ High-quality text-based rendering via utftex. Works everywhere, no image support
 <img src="assets/demo-image.gif" alt="termula image rendering mode" width="100%">
 </td>
 <td>
-<img src="assets/demo-unicode.png" alt="termula Unicode art rendering" width="100%">
+<img src="assets/demo.gif" alt="termula Unicode art rendering" width="100%">
 </td>
 </tr>
 </table>
