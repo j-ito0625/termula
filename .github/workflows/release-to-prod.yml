@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Remove dev-only files
         run: |
@@ -24,9 +25,11 @@ jobs:
           git commit -m "Remove dev-only files for production release" --allow-empty
 
       - name: Push release branch to production repo
+        env:
+          PROD_TOKEN: ${{ secrets.PROD_REPO_TOKEN }}
         run: |
           tag="${GITHUB_REF#refs/tags/}"
-          git remote add prod https://x-access-token:${{ secrets.PROD_REPO_TOKEN }}@github.com/j-ito0625/termula.git
+          git remote add prod https://x-access-token:${PROD_TOKEN}@github.com/j-ito0625/termula.git
           git push prod HEAD:refs/heads/release/${tag} --force
 
       - name: Create PR on production repo
