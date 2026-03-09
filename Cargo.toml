@@ -1,0 +1,25 @@
+[package]
+name = "termula"
+version = "0.1.0"
+edition = "2021"
+description = "Render LaTeX math beautifully in your terminal"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nicokeywords/termula"
+homepage = "https://github.com/nicokeywords/termula"
+keywords = ["latex", "math", "terminal", "unicode", "cli"]
+categories = ["command-line-utilities", "text-processing"]
+exclude = ["assets/", "docs/", "HomebrewFormula/"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+portable-pty = "0.8"
+libc = "0.2"
+signal-hook = "0.3"
+base64 = "0.22"
+tempfile = "3"
+wait-timeout = "0.2"
+clap_complete = "4"
+toml = "0.8"
+serde = { version = "1", features = ["derive"] }
